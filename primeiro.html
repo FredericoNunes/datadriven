@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Primeiro Web Slide</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h5>Como a ciência prova as coisas,</h5>
+						<br> E o que a A55 tem haver com isso?
+					</section>
+					<section data-background-video="https://a55.tech/app/uploads/2020/01/A55_COMPRESSED.mp4" data-background-video data-preload>
+							<h3>Vamos começar simples </h3>
+					</section>
+					<section>
+							<h2>Ciência:</h2>
+								<ul>
+									<li>
+										Método utilizado para diminuir a incerteza das coisas
+								    </li>
+							    </ul>			
+					</section>
+					<section>
+							<h3> Porém: 1 </h3>
+							Se for uma ciência que usa matemática <br> Ja tentou  até positivar a vida
+						</section>
+						<section>
+							<h3> Porém: 2 </h3>
+							As ciências sociais tem seus atrativos, mas possui suas dicussões internas. 
+						</section>
+				</section>
+				<section>
+					<section>
+					<h2>Como?</h2>
+						Como a ciência prova que diminui a incerteza das coisas?
+					</section>
+					<section>
+						<h4>A pergunta adiciona as seguintes complexidades:</h4>
+						<ul>
+							<li>
+								O que é uma <font COLOR="#FFFF00"> prova </font> ?
+							</li>
+							<li>
+								O que é <font COLOR="#FFFF00">incerteza </font>?
+							</li>
+						</ul>
+					</section>
+				<section>
+					<h5>Prova:</h5> Uma ideia que te passam e que vai funcionar em 99.999999% das vezes
+					Acho que essa explicaççao serve
+				</section>	
+				<section>
+					<h5>Incerteza:</h5> O amanhã
+					Ou seja uma prova serve pra aprender com o passado e dizer como será o futuro
+				</section>	
+				</section>
+
+				<section>
+					<h5>Ta, mas qual o método?</h5>
+				</section>
+				
+				<section>
+						<canvas id="myChart"></canvas>
+						<button id="randomizeData">Randomize Data</button>
+						<button id="addDataset">Add Dataset</button>
+						<button id="removeDataset">Remove Dataset</button>
+						<button id="addData">Add Data</button>
+						<button id="removeData">Remove Data</button>
+				</section>
+				<section>
+						<canvas id="myChart_2">
+		
+						</canvas>
+				</section>		
+				</div>
+			
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script src="charts/exemple_1.js"></script>
+		<script src="charts/example_2.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@1.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+		<script src="../../utils.js"></script>
+		<script src="http://www.chartjs.org/dist/2.6.0/Chart.bundle.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/chart/Chart.min.js' },				
+					{ src: 'plugin/chart/csv2chart.js' },
+					{ src: 'plugin/menu/menu.js' }
+					
+				]
+			});
+		</script>
+	</body>
+</html>
