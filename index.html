@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>aSuaReceita</title>
+		<title>Jornada Do Heroi</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -26,7 +26,51 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<section>
+						Cliente
+					</section>
+					<section>
+						São CNPJ's que:
+						<p>
+						Criam produtos e serviços
+						para a população usando fatores de produção
+						adiquiridos de varios Fornecedores.
+						</p>
+						<p>Pagando impostos</p>
+					</section>
 					
+					<section>
+						<p>Usando uma aproximação grosseira:</p>
+						<p>Ao empreender preocupa-se com:<p>
+						<ul>
+							<li>Produção</li>
+							<li>Clientes</li>
+							<li>Fornecedores</li>
+							<li>Tributos</li>
+							<li>Ambiente Regulatório</li>
+							<li>E as noites perdidas de sono</li>
+						</ul>
+					</section>
+					<section>
+						<p>A A55 recebe essas dores como um CTA.</p>
+						<p>O Crédito é um instrumento chave na gestão dessas
+						dificuldades.</p> 
+					</section>
+				</section>
+				
+				<section>
+						<section>
+								<p>Atualmente o Cliente chega com a necessidade e o ajudamos
+									com o credito</p>
+								<p>
+									Hoje sabemos que eles querem mais
+								</p>
+								<p>
+									Querem previsibilidade do fluxo de caixa
+								</p>
+						</section>
+				<section>
+					Algo Assim:
 				</section>
 				<section>
 					<iframe    src="https://metabase.a55.tech/public/question/642f90a4-737c-42ac-9a8c-d1d483f6aaa0#theme=night"    frameborder="0"    width="800"    height="600"    allowtransparency></iframe>
@@ -40,7 +84,32 @@
 				<section>
 					<iframe    src="https://metabase.a55.tech/public/question/9650888c-e9d1-4d3b-af00-00bd17107b2c#theme=night"    frameborder="0"    width="800"    height="600"    allowtransparency></iframe>
 				</section>
-				</div>
+			</section>
+				<section>
+				<section>
+					Para produzir utiliza-se de alguns fatores de produção.
+					Que na maioria das vezes são escassos.
+				</section>
+				<section>
+					<p>Fatores de Produção</p>
+					<ul>
+						<li>Terra</li>
+						<li>Trabalho</li>
+						<li>Tecnologia</li>
+						<li>Capacidade Empresarial</li>
+						<li>Capital</li>
+					</ul>
+				</section>
+				<section>
+						<p>Simplificação Econômica</p>
+						\[\begin{aligned}
+						Q &amp; = (Ter,Tr,Te,CE,C) \\
+						Q &amp; = (Ter,L,A,CE,K) \\
+						Q &amp; = A(L,K) \\
+						\end{aligned} \]			
+				</section>
+			</section>
+			</div>
 			
 		</div>
 		
@@ -52,7 +121,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@1.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 		<script src="../../utils.js"></script>
 		<script src="http://www.chartjs.org/dist/2.6.0/Chart.bundle.js"></script>
-
+		<script src="plugin/math/math.js"></script>
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
@@ -66,7 +135,16 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/chart/Chart.min.js' },				
 					{ src: 'plugin/chart/csv2chart.js' },
-					{ src: 'plugin/menu/menu.js' }
+					{ src: 'plugin/menu/menu.js' },
+					{
+    				  math: {
+      				  mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+      				  config: 'TeX-AMS_HTML-full',
+      				  // pass other options into `MathJax.Hub.Config()`
+      				  TeX: { Macros: { RR: "{\\bf R}" } }
+                		},
+    				plugins: [ RevealMath ]
+  					}
 					
 				]
 			});
